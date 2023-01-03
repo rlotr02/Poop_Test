@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Information from '../common/Information';
 
 const StartPage = () => {
   return (
-    <Center>
-      <h1>똥BTI</h1>
-      <h2>나는 어떤 똥일까?</h2>
-      <img src="./image/main.png" alt="main" />
-      <TestStart>
-        <TestLink to="/test">테스트 시작하기</TestLink>
-      </TestStart>
-    </Center>
+    <>
+      <Center>
+        <h1>똥BTI</h1>
+        <h2>나는 어떤 똥일까?</h2>
+        <img src="./image/main.png" alt="main" />
+        <TestStart>
+          <TestLink to="/test">테스트 시작하기</TestLink>
+        </TestStart>
+      </Center>
+      <Information />
+    </>
   );
 };
 

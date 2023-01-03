@@ -25,24 +25,18 @@ const ShareKakao = () => {
         container: '#kakao-link-btn',
         objectType: 'feed',
         content: {
-          title: '똥BTI',
-          description: '내가 똥이라면 나는 어떤 똥일까?',
+          title: name,
+          description: '내가 만약 똥이라면 나는 ' + name + '이야',
           imageUrl: ImageURL,
           link: {
-            webUrl: url,
+            webUrl: ShareURL,
           },
         },
         buttons: [
           {
-            title: '똥BTI',
+            title: '나는 어떤 똥일까?',
             link: {
               webUrl: url,
-            },
-          },
-          {
-            title: '결과보기',
-            link: {
-              webUrl: ShareURL,
             },
           },
         ],

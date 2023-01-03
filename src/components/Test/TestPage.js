@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import data from '../common/API/QuestionsAPI.json';
 import resultdata from '../common/API/ResultAPI.json';
 import LoadingPage from '../Loading/LoadingPage';
+import Information from '../common/Information';
 
 const TestPage = () => {
   const [num, setNum] = useState(0);
@@ -68,23 +69,26 @@ const TestPage = () => {
 
   if (!data[num]) return ResultTest();
   return (
-    <Center>
-      <Header>
-        <PrevBtn onClick={() => PrevClick()}>&lt;</PrevBtn>
-        <h2>똥BTI</h2>
-        <h3>{num + 1} / 7</h3>
-      </Header>
-      <ProgressBar>
-        <ProgressBarFill width={(num + 1) * 84} />
-      </ProgressBar>
-      <h4>{data[num].question}</h4>
-      <AnswerBtn onClick={() => nextSlide(0)}>
-        {data[num].answers[0].answer}
-      </AnswerBtn>
-      <AnswerBtn onClick={() => nextSlide(1)}>
-        {data[num].answers[1].answer}
-      </AnswerBtn>
-    </Center>
+    <>
+      <Center>
+        <Header>
+          <PrevBtn onClick={() => PrevClick()}>&lt;</PrevBtn>
+          <h2>똥BTI</h2>
+          <h3>{num + 1} / 7</h3>
+        </Header>
+        <ProgressBar>
+          <ProgressBarFill width={(num + 1) * 84} />
+        </ProgressBar>
+        <h4>{data[num].question}</h4>
+        <AnswerBtn onClick={() => nextSlide(0)}>
+          {data[num].answers[0].answer}
+        </AnswerBtn>
+        <AnswerBtn onClick={() => nextSlide(1)}>
+          {data[num].answers[1].answer}
+        </AnswerBtn>
+      </Center>
+      <Information />
+    </>
   );
 };
 

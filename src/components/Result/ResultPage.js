@@ -5,6 +5,7 @@ import resultdata from '../common/API/ResultAPI.json';
 import ShareLinkBtn from '../ShareSNS/ShareLinkBtn';
 import ShareKakaoBtn from '../ShareSNS/ShareKakaoBtn';
 import ShareImgBtn from '../ShareSNS/ShareImgBtn';
+import Information from '../common/Information';
 
 const ResultPage = () => {
   const params = useParams();
@@ -17,34 +18,37 @@ const ResultPage = () => {
   }
 
   return (
-    <Center>
-      <div id="saveImg">
-        <ResultDiv>
-          <h2>"{resultdata[num].word}"</h2>
-          <h1>{resultdata[num].name}</h1>
-          <img src={resultdata[num].img} alt={resultdata[num].name} />
-          <h3>{resultdata[num].description}</h3>
-        </ResultDiv>
+    <>
+      <Center>
+        <div id="saveImg">
+          <ResultDiv>
+            <h2>"{resultdata[num].word}"</h2>
+            <h1>{resultdata[num].name}</h1>
+            <img src={resultdata[num].img} alt={resultdata[num].name} />
+            <h3>{resultdata[num].description}</h3>
+          </ResultDiv>
+          <PlusDiv>
+            <h2>나와 가장 잘 맞는 똥은?</h2>
+            <img
+              src={resultdata[num].friend.img}
+              alt={resultdata[num].friend.name}
+            />
+            <h3>"{resultdata[num].friend.word}"</h3>
+            <h1>{resultdata[num].friend.name}</h1>
+          </PlusDiv>
+        </div>
         <PlusDiv>
-          <h2>나와 가장 잘 맞는 똥은?</h2>
-          <img
-            src={resultdata[num].friend.img}
-            alt={resultdata[num].friend.name}
-          />
-          <h3>"{resultdata[num].friend.word}"</h3>
-          <h1>{resultdata[num].friend.name}</h1>
+          <h2>친구에게 내 똥 공유하기</h2>
+          <ShareBtn>
+            <ShareLinkBtn />
+            <ShareKakaoBtn />
+            <ShareImgBtn />
+          </ShareBtn>
         </PlusDiv>
-      </div>
-      <PlusDiv>
-        <h2>친구에게 내 똥 공유하기</h2>
-        <ShareBtn>
-          <ShareLinkBtn />
-          <ShareKakaoBtn />
-          <ShareImgBtn />
-        </ShareBtn>
-      </PlusDiv>
-      <RestartLink to={`/`}>테스트 다시하기 &gt;</RestartLink>
-    </Center>
+        <RestartLink to={`/`}>테스트 다시하기 &gt;</RestartLink>
+      </Center>
+      <Information />
+    </>
   );
 };
 
