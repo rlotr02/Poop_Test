@@ -6,12 +6,12 @@ const LoadingPage = () => {
     <Center>
       <h2>변기에 똥 싸는 중...</h2>
       <ImgDiv>
-        <img src="./image/3.png" alt="loading" />
+        <img src="./image/loading/3.png" alt="loading" />
         <div>
-          <Img2 src="./image/2.png" alt="loading" />
+          <Img2 src="./image/loading/2.png" alt="loading" />
         </div>
         <div>
-          <img src="./image/1.png" alt="loading" />
+          <img src="./image/loading/1.png" alt="loading" />
         </div>
       </ImgDiv>
     </Center>

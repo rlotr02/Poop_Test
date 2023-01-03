@@ -62,7 +62,7 @@ const TestStart = styled.div`
 const TestLink = styled(Link)`
   font-family: 'GmarketSansBold';
   font-size: 35px;
-  line-height: 100px;
+  line-height: 108px;
   display: flex;
   justify-content: center;
   color: #56483b;

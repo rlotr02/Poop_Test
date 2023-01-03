@@ -8,7 +8,7 @@ const ShareKakao = () => {
   const nameURL = decodeURI(`${window.location.pathname}`);
   const name = nameURL.replace('/result/', '');
 
-  const ImageURL = 'https://pooptest.netlify.app/image/' + name + '.png';
+  const ImageURL = 'https://pooptest.netlify.app/image/poop/' + name + '.png';
 
   useEffect(() => {
     CreateShareKakao();
