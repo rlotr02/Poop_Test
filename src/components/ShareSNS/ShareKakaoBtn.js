@@ -1,27 +1,24 @@
-import React from 'react';
-import styled from 'styled-components';
-import { RiKakaoTalkFill } from 'react-icons/ri';
+import React, { useEffect, useState } from 'react';
+import ShareKakao from './ShareKakao';
 
 const ShareKakaoBtn = () => {
-  return (
-    <ShareBtn>
-      <RiKakaoTalkFill size="78" color="#514133" />
-    </ShareBtn>
-  );
+  const [shareButton, Setsharebutton] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://developers.kakao.com/sdk/js/kakao.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      Setsharebutton(true);
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  return <div>{shareButton === true ? <ShareKakao /> : null}</div>;
 };
+
 export default ShareKakaoBtn;
-
-const ShareBtn = styled.button`
-  border: none;
-  width: 120px;
-  height: 120px;
-  border-radius: 100px;
-  background: #a08678;
-  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 65px;
-
-  :hover {
-    cursor: pointer;
-    background: #776053;
-  }
-`;
