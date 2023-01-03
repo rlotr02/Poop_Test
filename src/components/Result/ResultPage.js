@@ -91,7 +91,8 @@ const ResultDiv = styled.div`
   }
 
   img {
-    margin: 43px;
+    margin: 36px;
+    width: 300px;
   }
 
   h3 {
@@ -119,7 +120,8 @@ const PlusDiv = styled.div`
   }
 
   img {
-    margin: 57px;
+    margin: 24px;
+    width: 300px;
   }
 
   h3 {
