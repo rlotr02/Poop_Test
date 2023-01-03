@@ -5,6 +5,7 @@ import data from '../common/API/QuestionsAPI.json';
 import resultdata from '../common/API/ResultAPI.json';
 import LoadingPage from '../Loading/LoadingPage';
 import Information from '../common/Information';
+import AdfitKakao from '../AdfitKakao/AdfitKakao';
 
 const TestPage = () => {
   const [num, setNum] = useState(0);
@@ -86,6 +87,7 @@ const TestPage = () => {
         <AnswerBtn onClick={() => nextSlide(1)}>
           {data[num].answers[1].answer}
         </AnswerBtn>
+        <AdfitKakao />
       </Center>
       <Information />
     </>

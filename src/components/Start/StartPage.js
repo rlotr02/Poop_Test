@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Information from '../common/Information';
+import AdfitKakao from '../AdfitKakao/AdfitKakao';
 
 const StartPage = () => {
   return (
@@ -13,6 +14,7 @@ const StartPage = () => {
         <TestStart>
           <TestLink to="/test">테스트 시작하기</TestLink>
         </TestStart>
+        <AdfitKakao />
       </Center>
       <Information />
     </>

@@ -6,6 +6,7 @@ import ShareLinkBtn from '../ShareSNS/ShareLinkBtn';
 import ShareKakaoBtn from '../ShareSNS/ShareKakaoBtn';
 import ShareImgBtn from '../ShareSNS/ShareImgBtn';
 import Information from '../common/Information';
+import AdfitKakao from '../AdfitKakao/AdfitKakao';
 
 const ResultPage = () => {
   const params = useParams();
@@ -46,6 +47,8 @@ const ResultPage = () => {
           </ShareBtn>
         </PlusDiv>
         <RestartLink to={`/`}>테스트 다시하기 &gt;</RestartLink>
+        <AdfitKakao />
+        <div className="margin"></div>
       </Center>
       <Information />
     </>
@@ -68,6 +71,10 @@ const Center = styled.div`
 
   #saveImg {
     padding: 63px;
+  }
+
+  .margin {
+    margin-bottom: 80px;
   }
 `;
 
@@ -153,7 +160,6 @@ const RestartLink = styled(Link)`
   font-size: 30px;
   color: #56483b;
   text-decoration: none;
-  margin-bottom: 130px;
 
   :hover {
     cursor: pointer;
