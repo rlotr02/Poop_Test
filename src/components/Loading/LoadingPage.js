@@ -34,6 +34,7 @@ const Center = styled.div`
 
   h2 {
     font-size: 2.5em;
+    font-weight: 500;
     color: #56483b;
   }
 `;

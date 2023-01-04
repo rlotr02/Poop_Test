@@ -91,6 +91,7 @@ const ResultDiv = styled.div`
   h2 {
     margin-top: 2.3714285714285714em;
     font-size: 2.1875em;
+    font-weight: 500;
     color: #655a50;
   }
 
@@ -98,6 +99,7 @@ const ResultDiv = styled.div`
     margin-top: 0.4em;
     font-family: 'GmarketSansBold';
     font-size: 3.125em;
+    font-weight: 700;
     color: #48311c;
   }
 
@@ -109,6 +111,7 @@ const ResultDiv = styled.div`
   h3 {
     padding: 0 2.92em;
     font-size: 1.5625em;
+    font-weight: 500;
     line-height: 1.8em;
     color: #56483b;
     margin-bottom: 2.8em;
@@ -127,6 +130,7 @@ const PlusDiv = styled.div`
   h2 {
     margin-top: 1.7142857142857142em;
     font-size: 2.1875em;
+    font-weight: 500;
     color: #56483b;
   }
 
@@ -137,6 +141,7 @@ const PlusDiv = styled.div`
 
   h3 {
     font-size: 1.875em;
+    font-weight: 500;
     color: #655a50;
   }
 
@@ -144,6 +149,7 @@ const PlusDiv = styled.div`
     margin-top: 0.5em;
     font-family: 'GmarketSansBold';
     font-size: 2.5em;
+    font-weight: 700;
     color: #48311c;
     margin-bottom: 1.5em;
   }
@@ -158,6 +164,7 @@ const ShareBtn = styled.div`
 const RestartLink = styled(Link)`
   margin-top: 1.6666666666666667em;
   font-size: 1.875em;
+  font-weight: 500;
   color: #56483b;
   text-decoration: none;
 

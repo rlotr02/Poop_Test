@@ -123,18 +123,24 @@ const InFoDiv = styled.div`
     background: #d5bca6;
   }
 
+  @media (max-width: 480px) {
+    width: 332px;
+  }
+
   @media (max-width: 365px) {
     border-radius: 40px;
+    width: 268px;
   }
 
   h3 {
     margin: 0 73px 30px 54px;
     font-size: 20px;
+    font-weight: 500;
     line-height: 35px;
     color: #56483b;
 
     @media (max-width: 480px) {
-      margin: 0 66px 23px 40px;
+      margin: 0 65px 23px 30px;
       font-size: 16px;
       line-height: 30px;
     }
@@ -148,8 +154,8 @@ const InFoDiv = styled.div`
 
   h4 {
     font-family: 'GmarketSansLight';
-    font-weight: 300;
     font-size: 15px;
+    font-weight: 300;
     color: #514133;
     margin-bottom: 34px;
 
@@ -209,10 +215,11 @@ const Div = styled.div`
     font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 30px;
+    font-weight: 700;
     color: #56483b;
 
     @media (max-width: 480px) {
-      margin-right: 130px;
+      margin-right: 145px;
       margin-top: 38px;
       font-size: 26px;
     }

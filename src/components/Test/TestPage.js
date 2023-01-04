@@ -111,6 +111,7 @@ const Center = styled.div`
 
   h2 {
     font-family: 'GmarketSansBold';
+    font-weight: 700;
     font-size: 2.5em;
     color: #56483b;
     margin-right: 3.75em;
@@ -119,6 +120,7 @@ const Center = styled.div`
   h3 {
     font-family: 'GmarketSansBold';
     font-size: 1.875em;
+    font-weight: 700;
     color: #766a5e;
   }
 
@@ -126,6 +128,7 @@ const Center = styled.div`
     margin: 2em 0 0.5714285714285714em 0;
     width: 15.714285714285714em;
     font-size: 2.1875em;
+    font-weight: 500;
     color: #56483b;
     text-align: center;
   }
@@ -137,6 +140,7 @@ const Header = styled.div`
 
 const PrevBtn = styled.div`
   font-family: 'GmarketSansBold';
+  font-weight: 700;
   font-size: 2.5em;
   color: #766a5e;
   margin-right: 5em;
@@ -183,6 +187,7 @@ const AnswerBtn = styled.button`
 
   font-family: 'GmarketSansMedium';
   font-size: 1.875em;
+  font-weight: 500;
   color: #56483b;
 
   :hover {

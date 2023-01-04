@@ -38,4 +38,15 @@ const ShareBtn = styled.button`
     height: 5em;
     padding: 0.9em;
   }
+
+  @media (max-width: 374px) {
+    width: 4em;
+    height: 4em;
+    padding: 0.6em;
+  }
+
+  @media (max-width: 319px) {
+    width: 3em;
+    height: 3em;
+  }
 `;

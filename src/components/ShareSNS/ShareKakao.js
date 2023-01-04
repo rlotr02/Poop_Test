@@ -73,4 +73,18 @@ const ShareBtn = styled.button`
     padding: 0.9em;
     margin: 0 2.5em;
   }
+
+  @media (max-width: 374px) {
+    width: 4em;
+    height: 4em;
+    padding: 0.6em;
+    margin: 0 2em;
+  }
+
+  @media (max-width: 319px) {
+    width: 3em;
+    height: 3em;
+    padding: 0.6em;
+    margin: 0 1.5em;
+  }
 `;

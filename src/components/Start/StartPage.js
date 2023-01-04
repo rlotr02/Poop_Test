@@ -37,6 +37,7 @@ const Center = styled.div`
 
   h1 {
     font-size: 4em;
+    font-weight: 700;
     line-height: 150%;
     font-family: GmarketSansBold;
     color: #48311c;
@@ -44,6 +45,7 @@ const Center = styled.div`
 
   h2 {
     font-size: 2.375em;
+    font-weight: 500;
     color: #655a50;
   }
 
@@ -70,6 +72,7 @@ const TestStart = styled.div`
 const TestLink = styled(Link)`
   font-family: 'GmarketSansBold';
   font-size: 2.1875em;
+  font-weight: 700;
   line-height: 3.085714285714286em;
   display: flex;
   justify-content: center;
