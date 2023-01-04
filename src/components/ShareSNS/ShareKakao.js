@@ -4,9 +4,10 @@ import { RiKakaoTalkFill } from 'react-icons/ri';
 
 const ShareKakao = () => {
   const url = 'https://pooptest.netlify.app';
-  const ShareURL = decodeURI(`${window.location.href}`);
   const nameURL = decodeURI(`${window.location.pathname}`);
   const name = nameURL.replace('/result/', '');
+
+  const ShareURL = 'https://pooptest.netlify.app/result/' + name;
 
   const ImageURL = 'https://pooptest.netlify.app/image/poop/' + name + '.png';
 
@@ -30,6 +31,7 @@ const ShareKakao = () => {
           imageUrl: ImageURL,
           link: {
             webUrl: ShareURL,
+            mobileWebUrl: ShareURL,
           },
         },
         buttons: [
@@ -37,6 +39,7 @@ const ShareKakao = () => {
             title: '나는 어떤 똥일까?',
             link: {
               webUrl: url,
+              mobileWebUrl: url,
             },
           },
         ],
