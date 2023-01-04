@@ -36,28 +36,30 @@ const Center = styled.div`
   transition: 0.5s;
 
   h1 {
-    font-size: 55px;
+    font-size: 4em;
+    line-height: 150%;
     font-family: GmarketSansBold;
     color: #48311c;
   }
 
   h2 {
-    font-size: 38px;
+    font-size: 2.375em;
     color: #655a50;
   }
 
   img {
-    margin: 7px;
+    margin: 0.4375em;
+    width: 17.75em;
   }
 `;
 
 const TestStart = styled.div`
-  width: 547px;
-  height: 100px;
+  width: 34.1875em;
+  height: 6.25em;
 
   background: #caa692;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 100px;
+  box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 6.25em;
 
   :hover {
     cursor: pointer;
@@ -67,8 +69,8 @@ const TestStart = styled.div`
 
 const TestLink = styled(Link)`
   font-family: 'GmarketSansBold';
-  font-size: 35px;
-  line-height: 108px;
+  font-size: 2.1875em;
+  line-height: 3.085714285714286em;
   display: flex;
   justify-content: center;
   color: #56483b;

@@ -22,5 +22,5 @@ const AdfitKakao = () => {
 export default AdfitKakao;
 
 const Advert = styled.div`
-  margin-top: 70px;
+  margin-top: 4.375em;
 `;

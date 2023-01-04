@@ -28,7 +28,7 @@ const Information = () => {
                 setVisible(!visible);
               }}
             >
-              <RiCloseFill size={40} color="#56483B" />
+              <RiCloseFill size="1x" color="#56483B" />
             </button>
           </Div>
           <h3>
@@ -61,24 +61,36 @@ export default Information;
 
 const Btn = styled.button`
   position: fixed;
-  width: 100px;
-  height: 100px;
+  width: 6.25em;
+  height: 6.25em;
   border: none;
-  border-radius: 100px;
-  bottom: 30px;
-  right: 35px;
+  border-radius: 6.25em;
+  bottom: 1.875em;
+  right: 2.1875em;
   background: #c3ab95;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0em 0.25em 0.25em rgba(0, 0, 0, 0.25);
 
   :hover {
     cursor: pointer;
     background: #56483b;
   }
 
+  @media (max-width: 480px) {
+    width: 5em;
+    height: 5em;
+    padding: 0.9em;
+  }
+
   img {
-    width: 78px;
-    margin-top: 8px;
-    margin-left: 4px;
+    width: 4.875em;
+    margin-top: 0.5em;
+    margin-left: 0.25em;
+
+    @media (max-width: 480px) {
+      width: 4em;
+      margin-top: -0.2em;
+      margin-left: -0.32em;
+    }
   }
 `;
 
@@ -89,8 +101,8 @@ const InFoDiv = styled.div`
   align-items: center;
 
   position: fixed;
-  bottom: 30px;
-  right: 35px;
+  bottom: 1.875em;
+  right: 2.1875em;
 
   background: rgba(196, 171, 149, 0.53);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -107,11 +119,31 @@ const InFoDiv = styled.div`
     }
   }
 
+  @media (max-width: 1500px) {
+    background: #d5bca6;
+  }
+
+  @media (max-width: 365px) {
+    border-radius: 40px;
+  }
+
   h3 {
     margin: 0 73px 30px 54px;
     font-size: 20px;
     line-height: 35px;
     color: #56483b;
+
+    @media (max-width: 480px) {
+      margin: 0 66px 23px 40px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 365px) {
+      margin: 0 55px 16px 23px;
+      font-size: 13px;
+      line-height: 25px;
+    }
   }
 
   h4 {
@@ -120,6 +152,16 @@ const InFoDiv = styled.div`
     font-size: 15px;
     color: #514133;
     margin-bottom: 34px;
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+      margin-bottom: 27px;
+    }
+
+    @media (max-width: 365px) {
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
   }
 `;
 
@@ -133,11 +175,32 @@ const Div = styled.div`
 
     background: #56483b;
     border-radius: 100px;
+
+    @media (max-width: 480px) {
+      margin: 25px 15px 20px 20px;
+      width: 55px;
+      height: 55px;
+    }
+
+    @media (max-width: 365px) {
+      margin: 25px 10px 15px 20px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   img {
     width: 58px;
     margin: 4px;
+
+    @media (max-width: 480px) {
+      width: 50px;
+      margin: 3px;
+    }
+
+    @media (max-width: 365px) {
+      width: 36px;
+    }
   }
 
   p {
@@ -147,6 +210,18 @@ const Div = styled.div`
     font-weight: 700;
     font-size: 30px;
     color: #56483b;
+
+    @media (max-width: 480px) {
+      margin-right: 130px;
+      margin-top: 38px;
+      font-size: 26px;
+    }
+
+    @media (max-width: 365px) {
+      margin-right: 135px;
+      margin-top: 36px;
+      font-size: 20px;
+    }
   }
 
   button {
@@ -154,11 +229,22 @@ const Div = styled.div`
     right: 0;
     margin-top: 28px;
     margin-right: 20px;
+    width: 53px;
     background: transparent;
     border: none;
 
     :hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+      width: 50px;
+    }
+
+    @media (max-width: 365px) {
+      width: 40px;
+      margin-top: 20px;
+      margin-right: 15px;
     }
   }
 `;
@@ -185,5 +271,21 @@ const LinkA = styled.a`
   :hover {
     cursor: pointer;
     background: #927565;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 25px;
+    width: 280px;
+    height: 75px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 365px) {
+    margin-bottom: 20px;
+    width: 240px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 16px;
   }
 `;

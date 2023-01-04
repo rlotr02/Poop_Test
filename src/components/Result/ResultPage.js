@@ -58,7 +58,7 @@ const ResultPage = () => {
 export default ResultPage;
 
 const Center = styled.div`
-  margin-top: 53px;
+  margin-top: 3.3125em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -70,94 +70,94 @@ const Center = styled.div`
   transition: 0.5s;
 
   #saveImg {
-    padding: 63px;
+    padding: 3.9375em;
   }
 
   .margin {
-    margin-bottom: 80px;
+    margin-bottom: 5em;
   }
 `;
 
 const ResultDiv = styled.div`
   box-sizing: border-box;
-  margin-bottom: 63px;
-  width: 740px;
+  margin-bottom: 3.9375em;
+  width: 46.25em;
   background: rgba(202, 166, 146, 0.67);
-  border: 1px solid #56483b;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  border: 0.0625em solid #56483b;
+  box-shadow: 0.125em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 3.125em;
   text-align: center;
 
   h2 {
-    margin-top: 83px;
-    font-size: 35px;
+    margin-top: 2.3714285714285714em;
+    font-size: 2.1875em;
     color: #655a50;
   }
 
   h1 {
-    margin-top: 20px;
+    margin-top: 0.4em;
     font-family: 'GmarketSansBold';
-    font-size: 50px;
+    font-size: 3.125em;
     color: #48311c;
   }
 
   img {
-    margin: 36px;
-    width: 300px;
+    margin: 2.25em;
+    width: 18.75em;
   }
 
   h3 {
-    padding: 0 73px;
-    font-size: 25px;
-    line-height: 45px;
+    padding: 0 2.92em;
+    font-size: 1.5625em;
+    line-height: 1.8em;
     color: #56483b;
-    margin-bottom: 70px;
+    margin-bottom: 2.8em;
   }
 `;
 
 const PlusDiv = styled.div`
   box-sizing: border-box;
-  width: 740px;
+  width: 46.25em;
   background: rgba(202, 166, 146, 0.67);
-  border: 1px solid #56483b;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  border: 0.0625em solid #56483b;
+  box-shadow: 0.125em 0.25em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 3.125em;
   text-align: center;
 
   h2 {
-    margin-top: 60px;
-    font-size: 35px;
+    margin-top: 1.7142857142857142em;
+    font-size: 2.1875em;
     color: #56483b;
   }
 
   img {
-    margin: 24px;
-    width: 300px;
+    margin: 1.5em;
+    width: 18.75em;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 1.875em;
     color: #655a50;
   }
 
   h1 {
-    margin-top: 20px;
+    margin-top: 0.5em;
     font-family: 'GmarketSansBold';
-    font-size: 40px;
+    font-size: 2.5em;
     color: #48311c;
-    margin-bottom: 60px;
+    margin-bottom: 1.5em;
   }
 `;
 
 const ShareBtn = styled.div`
-  margin: 50px 0 65px;
+  margin: 3.125em 0 4.0625em;
   display: flex;
   justify-content: center;
 `;
 
 const RestartLink = styled(Link)`
-  margin-top: 50px;
-  font-size: 30px;
+  margin-top: 1.6666666666666667em;
+  font-size: 1.875em;
   color: #56483b;
   text-decoration: none;
 

@@ -13,7 +13,7 @@ const ShareLinkBtn = () => {
 
   return (
     <ShareBtn onClick={ClipBoard}>
-      <TbLink size="80" color="#514133" />
+      <TbLink size="1x" color="#514133" />
     </ShareBtn>
   );
 };
@@ -21,14 +21,21 @@ export default ShareLinkBtn;
 
 const ShareBtn = styled.button`
   border: none;
-  width: 120px;
-  height: 120px;
-  border-radius: 100px;
+  width: 8em;
+  height: 8em;
+  padding: 1.25em;
+  border-radius: 6.25em;
   background: #a08678;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
 
   :hover {
     cursor: pointer;
     background: #776053;
+  }
+
+  @media (max-width: 575px) {
+    width: 5em;
+    height: 5em;
+    padding: 0.9em;
   }
 `;

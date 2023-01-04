@@ -78,7 +78,7 @@ const TestPage = () => {
           <h3>{num + 1} / 7</h3>
         </Header>
         <ProgressBar>
-          <ProgressBarFill width={(num + 1) * 84} />
+          <ProgressBarFill width={(num + 1) * 5.25} />
         </ProgressBar>
         <h4>{data[num].question}</h4>
         <AnswerBtn onClick={() => nextSlide(0)}>
@@ -107,24 +107,25 @@ const Center = styled.div`
   right: 0;
   bottom: 0;
   transition: 0.5s;
+  word-break: keep-all;
 
   h2 {
     font-family: 'GmarketSansBold';
-    font-size: 40px;
+    font-size: 2.5em;
     color: #56483b;
-    margin-right: 150px;
+    margin-right: 3.75em;
   }
 
   h3 {
     font-family: 'GmarketSansBold';
-    font-size: 30px;
+    font-size: 1.875em;
     color: #766a5e;
   }
 
   h4 {
-    margin: 70px 0 20px 0;
-    width: 550px;
-    font-size: 35px;
+    margin: 2em 0 0.5714285714285714em 0;
+    width: 15.714285714285714em;
+    font-size: 2.1875em;
     color: #56483b;
     text-align: center;
   }
@@ -136,10 +137,10 @@ const Header = styled.div`
 
 const PrevBtn = styled.div`
   font-family: 'GmarketSansBold';
-  font-size: 40px;
+  font-size: 2.5em;
   color: #766a5e;
-  margin-right: 200px;
-  margin-top: 1px;
+  margin-right: 5em;
+  margin-top: 0.025em;
   background: none;
   border: none;
 
@@ -150,37 +151,38 @@ const PrevBtn = styled.div`
 `;
 
 const ProgressBar = styled.div`
-  margin-top: 26px;
-  width: 588px;
-  height: 26px;
+  margin-top: 1.625em;
+  width: 36.75em;
+  height: 1.625em;
 
   background: #bda394;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  box-shadow: 0em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 3.125em;
 `;
 
 const ProgressBarFill = styled.div`
-  width: ${(props) => props.width}px;
-  height: 26px;
+  width: ${(props) => props.width}em;
+  height: 1.625em;
   background: #867267;
-  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  box-shadow: 0.125em 0em 0.25em rgba(0, 0, 0, 0.25);
+  border-radius: 3.125em;
 `;
 
 const AnswerBtn = styled.button`
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 1.6666666666666667em;
 
-  width: 588px;
-  height: 102px;
+  width: 19.6em;
+  height: 3.4em;
 
   background: #caa692;
-  border: 1px solid #56483b;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
+  border: 0.03333333333333333em solid #56483b;
+  box-shadow: 0.06666666666666667em 0.13333333333333333em 0.13333333333333333em
+    rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
 
   font-family: 'GmarketSansMedium';
-  font-size: 30px;
+  font-size: 1.875em;
   color: #56483b;
 
   :hover {

@@ -33,23 +33,23 @@ const Center = styled.div`
   transition: 0.5s;
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #56483b;
   }
 `;
 
 const ImgDiv = styled.div`
   position: relative;
-  margin-top: 50px;
+  margin-top: 3.125em;
 
   div {
     position: absolute;
-    top: 0px;
+    top: 0em;
   }
 
   img {
-    width: 317px;
-    height: 428px;
+    width: 19.8125em;
+    height: 26.75em;
   }
 `;
 
