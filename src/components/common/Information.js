@@ -44,7 +44,7 @@ const Information = () => {
             개발자 GITHUB 바로가기
           </LinkA>
           <LinkA
-            href="https://www.instagram.com/rlotr02"
+            href="https://www.instagram.com/rlotr.dev"
             target="_blank"
             rel="noreferrer"
           >
