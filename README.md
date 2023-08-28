@@ -17,10 +17,6 @@
 > **2022. 12. 31 ~ 2023. 01. 04**
 <br>
 
-## 🎨 디자인
-> [Figma](https://www.figma.com/file/TExuz5IXCkMR6I8K4WUKbp/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C?type=design&node-id=1-2&mode=design)
-<br>
-
 ## 🖱 동작 화면
 ### 화면 구성
 |![startpage](https://user-images.githubusercontent.com/72345074/212909164-372eb257-9b3c-4bc2-b920-567c5072a24c.png)|![testpage](https://user-images.githubusercontent.com/72345074/212909155-a683d558-0515-4ba2-b7df-f301bad1528c.png)|![loadingpage](https://user-images.githubusercontent.com/72345074/212909147-538e7656-da3c-48cd-972c-aba489d3fcbe.png)|![resultpage](https://user-images.githubusercontent.com/72345074/212909141-ee5998bd-e9a9-4a6b-a6a7-58b3abd5fa2b.png)|![sharepage](https://user-images.githubusercontent.com/72345074/212909661-33f1b892-b3ac-4cee-b87a-5ed126cbfb7d.png)|
