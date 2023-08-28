@@ -18,7 +18,7 @@
 <br>
 
 ## 🎨 디자인
-> [Figma](https://www.figma.com/file/5q4LqRNiGQ36AcJqIjG7pZ/%EB%98%A5BTI?node-id=0%3A1&t=rev42WdadDAmaac1-1)
+> [Figma](https://www.figma.com/file/TExuz5IXCkMR6I8K4WUKbp/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C?type=design&node-id=1-2&mode=design)
 <br>
 
 ## 🖱 동작 화면
