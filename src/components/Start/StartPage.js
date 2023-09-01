@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Information from '../common/Information';
-import AdfitKakao from '../AdfitKakao/AdfitKakao';
+import { isMobile } from '../common/style';
+import AdfitKakao1 from '../AdfitKakao/AdfitKakao1';
+import AdfitKakao2 from '../AdfitKakao/AdfitKakao2';
+import AdfitKakao3 from '../AdfitKakao/AdfitKakao3';
 
 const StartPage = () => {
   return (
@@ -14,7 +17,13 @@ const StartPage = () => {
         <TestStart>
           <TestLink to="/test">테스트 시작하기</TestLink>
         </TestStart>
-        <AdfitKakao />
+        <KakaoAdfitLeftDiv>
+          <AdfitKakao2 />
+        </KakaoAdfitLeftDiv>
+        <KakaoAdfitRightDiv>
+          <AdfitKakao3 />
+        </KakaoAdfitRightDiv>
+        <AdfitKakao1 />
       </Center>
       <Information />
     </>
@@ -78,4 +87,22 @@ const TestLink = styled(Link)`
   justify-content: center;
   color: #56483b;
   text-decoration: none;
+`;
+
+const KakaoAdfitLeftDiv = styled.div`
+  margin-right: 650px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
+  }
+`;
+
+const KakaoAdfitRightDiv = styled.div`
+  margin-left: 650px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
+  }
 `;

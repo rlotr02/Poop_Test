@@ -6,7 +6,10 @@ import ShareLinkBtn from '../ShareSNS/ShareLinkBtn';
 import ShareKakaoBtn from '../ShareSNS/ShareKakaoBtn';
 import ShareImgBtn from '../ShareSNS/ShareImgBtn';
 import Information from '../common/Information';
-import AdfitKakao from '../AdfitKakao/AdfitKakao';
+import { isMobile } from '../common/style';
+import AdfitKakao1 from '../AdfitKakao/AdfitKakao1';
+import AdfitKakao2 from '../AdfitKakao/AdfitKakao2';
+import AdfitKakao3 from '../AdfitKakao/AdfitKakao3';
 
 const ResultPage = () => {
   const params = useParams();
@@ -47,7 +50,13 @@ const ResultPage = () => {
           </ShareBtn>
         </PlusDiv>
         <RestartLink to={`/`}>테스트 다시하기 &gt;</RestartLink>
-        <AdfitKakao />
+        <KakaoAdfitLeftDiv>
+          <AdfitKakao2 />
+        </KakaoAdfitLeftDiv>
+        <KakaoAdfitRightDiv>
+          <AdfitKakao3 />
+        </KakaoAdfitRightDiv>
+        <AdfitKakao1 />
         <div className="margin"></div>
       </Center>
       <Information />
@@ -171,5 +180,23 @@ const RestartLink = styled(Link)`
   :hover {
     cursor: pointer;
     color: #48311c;
+  }
+`;
+
+const KakaoAdfitLeftDiv = styled.div`
+  margin-right: 800px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
+  }
+`;
+
+const KakaoAdfitRightDiv = styled.div`
+  margin-left: 800px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
   }
 `;

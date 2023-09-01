@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
-const AdfitKakao = () => {
+const AdfitKakao1 = () => {
   useEffect(() => {
     let ins = document.createElement('ins');
     let scr = document.createElement('script');
@@ -13,14 +13,14 @@ const AdfitKakao = () => {
     ins.setAttribute('data-ad-unit', 'DAN-56E9Ettwz3ndvzAQ');
     ins.setAttribute('data-ad-width', '320');
     ins.setAttribute('data-ad-height', '100');
-    document.querySelector('.adfit').appendChild(ins);
-    document.querySelector('.adfit').appendChild(scr);
+    document.querySelector('.adfit1').appendChild(ins);
+    document.querySelector('.adfit1').appendChild(scr);
   }, []);
-  return <Advert className="adfit" />;
+  return <Advert className="adfit1" />;
 };
 
-export default AdfitKakao;
+export default AdfitKakao1;
 
 const Advert = styled.div`
-  margin-top: 4.375em;
+  margin-top: 3em;
 `;

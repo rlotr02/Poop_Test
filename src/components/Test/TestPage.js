@@ -5,7 +5,10 @@ import data from '../common/API/QuestionsAPI.json';
 import resultdata from '../common/API/ResultAPI.json';
 import LoadingPage from '../Loading/LoadingPage';
 import Information from '../common/Information';
-import AdfitKakao from '../AdfitKakao/AdfitKakao';
+import { isMobile } from '../common/style';
+import AdfitKakao1 from '../AdfitKakao/AdfitKakao1';
+import AdfitKakao2 from '../AdfitKakao/AdfitKakao2';
+import AdfitKakao3 from '../AdfitKakao/AdfitKakao3';
 
 const TestPage = () => {
   const [num, setNum] = useState(0);
@@ -87,7 +90,13 @@ const TestPage = () => {
         <AnswerBtn onClick={() => nextSlide(1)}>
           {data[num].answers[1].answer}
         </AnswerBtn>
-        <AdfitKakao />
+        <KakaoAdfitLeftDiv>
+          <AdfitKakao2 />
+        </KakaoAdfitLeftDiv>
+        <KakaoAdfitRightDiv>
+          <AdfitKakao3 />
+        </KakaoAdfitRightDiv>
+        <AdfitKakao1 />
       </Center>
       <Information />
     </>
@@ -193,5 +202,23 @@ const AnswerBtn = styled.button`
   :hover {
     cursor: pointer;
     background: #927565;
+  }
+`;
+
+const KakaoAdfitLeftDiv = styled.div`
+  margin-right: 700px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
+  }
+`;
+
+const KakaoAdfitRightDiv = styled.div`
+  margin-left: 700px;
+  position: absolute;
+
+  ${isMobile} {
+    display: none;
   }
 `;
