@@ -1,9 +1,4 @@
-<div align="center">
-
 ![header](https://user-images.githubusercontent.com/72345074/212907657-2f4cd5fd-4365-476f-9082-2d2e0339b720.png)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Frlotr02%2FPoop_Test&count_bg=%23BEB4AC&title_bg=%23655A50&icon=github.svg&icon_color=%23EDE7E2&title=%EB%98%A5BTI&edge_flat=false)](https://hits.seeyoufarm.com)
-
-</div>
 
 # 똥BTI - 똥 테스트
 > **똥BTI 바로가기 :** [https://pooptest.netlify.app](https://pooptest.netlify.app)
@@ -14,7 +9,11 @@
 <br>
 
 ## ⏳ 개발 기간
-> **2022. 12. 31 ~ 2023. 01. 04**
+> **2022. 12. 31 ~ 2023. 01. 04 (5일)**
+<br>
+
+## 🛠 기술 스택
+> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/> 
 <br>
 
 ## 🖱 동작 화면
